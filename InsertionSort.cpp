@@ -6,7 +6,7 @@ int* InsertionSort(int unsorted[], int size) {
 
     int* sorted = unsorted;
 
-    for (int i=1; i<size-1; i++) {
+    for (int i=1; i<size; i++) {
 
         int temp = unsorted[i];
         int j = i-1;
@@ -32,7 +32,7 @@ int main() {
 
     int unsorted[size];
 
-    cout << "Please enter the values of your array :";
+    cout << "Please enter the values of your array: ";
 
     for (int i=0; i<size; i++) {
 
@@ -43,15 +43,13 @@ int main() {
 
     cout << endl;
 
-    cout << "The sorted array is: ";
+    cout << "The sorted array is: [ ";
 
     for (int i=0; i<size; i++) {
 
         cout << *(sortedPointer + i) << " " ;
     }
     
-    cout << endl;
+    cout << "]" << endl;
 
 }
-
-//figure out why it doesn't sort the last element
