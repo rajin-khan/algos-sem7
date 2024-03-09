@@ -2,6 +2,8 @@
 
 using namespace std;
 
+//remember to add comments to explain the bubble sort
+
 int* BubbleSort(int arr[], int size) {
 
     int* sorted = arr;
