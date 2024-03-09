@@ -43,7 +43,7 @@ int main() {
         cin >> unsorted[i];
     }
 
-    int* sortedPointer = InsertionSort(unsorted, size);
+    int* sortedPointer = InsertionSort(unsorted, size); //the pointer variable stores the pointer of the now sorted array to be returned by the InsertionSort() function
 
     cout << endl;
 
