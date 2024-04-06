@@ -3,7 +3,19 @@ import java.util.*;
 public class Main {
     public static void main(String[] names) {
 
-        int[] numbers = { 6, 7, 4, 5, 6, 3, 9, 2 };
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Please enter the size of your array: ");
+        int size = sc.nextInt();
+
+        int[] numbers = new int[size];
+
+        System.out.println("Enter the elements of your array: ");
+
+        for (int i=0; i<size; i++) {
+
+            numbers[i] = sc.nextInt();
+        }
 
         var sorter = new MergeSort();
 
