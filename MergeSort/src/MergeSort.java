@@ -2,6 +2,7 @@ public class MergeSort {
 
     public void sort(int[] array) {
 
+        //base case
         if (array.length<2) {
 
             return;
@@ -20,6 +21,7 @@ public class MergeSort {
 
         for (var i=middle; i<array.length; i++) {
 
+            //i-middle because the right partition array must start from 0.
             right[i-middle] = array[i];
         }
 
