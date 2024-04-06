@@ -17,8 +17,9 @@ public class Main {
             numbers[i] = sc.nextInt();
         }
 
-        var sorter = new MergeSort();
+        sc.close();
 
+        var sorter = new MergeSort();
         sorter.sort(numbers);
         
         System.out.println(Arrays.toString(numbers));
