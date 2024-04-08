@@ -10,6 +10,8 @@ public class Main {
 
         int[] array = new int[size];
 
+        System.out.println("Please enter the elements of your array: ");
+
         for (int i=0; i<size; i++) {
 
             array[i] = sc.nextInt();
@@ -17,10 +19,10 @@ public class Main {
 
         sc.close();
 
-        //var sorter = new QuickSort();
+        var sorter = new QuickSort();
 
-        
+        sorter.sort(array);
 
-        System.out.println("Hello, World!");
+        System.out.println(Arrays.toString(array));
     }
 }
