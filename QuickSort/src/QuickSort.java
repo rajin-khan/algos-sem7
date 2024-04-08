@@ -1,3 +1,5 @@
+//Mosh's video helped me understand this best.
+
 public class QuickSort {
 
     //this is just done to make the implementation in the main class cleaner.
