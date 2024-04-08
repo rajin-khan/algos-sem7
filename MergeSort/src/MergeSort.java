@@ -1,3 +1,5 @@
+//Mosh's video helped me understand this best.
+
 public class MergeSort {
 
     public void sort(int[] array) {
