@@ -20,7 +20,8 @@ int* InsertionSort(int unsorted[], int size) {
             unsorted[j+1] = unsorted[j]; //we shift the rest of them to the right to "make" space for the smaller number
             j--; //then, j is decremented to check the value behind again, so it can shift again if needed
         }
-        unsorted[j+1] = temp; //finally, when all the shifting is done, we assign the number to be inserted at the correct position. notice how j goes one step behind necessary to exit the loop, so we increment it once and then place the needed number there.
+        unsorted[j+1] = temp; //finally, when all the shifting is done, we assign the number to be inserted at the correct position. 
+        //notice how j goes one step behind necessary to exit the loop, so we increment it once and then place the needed number there.
     }
 
     return sorted; //finally, we return the pointer to the now sorted array.
